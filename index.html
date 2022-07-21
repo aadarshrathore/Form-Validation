@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form validation </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Train Ticket </a>
+        </div>
+    </nav>
+
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your form registration request has been successfully submitted
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error!</strong> Your form registration request has not been sent due to errors
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="container my-4 " style="background-color: #e9ecef;box-shadow: 0rem 3rem 0rem 2rem #e9ecef;">
+        <h1>Registration Form</h1>
+        <form>
+            <div class="form-group ">
+                <label for="email ">Email address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your email must be a valid email
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="tname">Train Name / No.</label>
+                <input type="text" class="form-control" id="tname" placeholder="Enter Train Name or Number">
+                <small id="tnamevalid" class="form-text text-muted invalid-feedback">
+                    Train name must be 2-10 characters long and should not start with a number
+                </small>
+
+            </div>
+            <div class="form-group col-md-10">
+                <label for="date">Date</label>
+                <input type="date" name="" id="date" class="form-control w-25 ">
+                <small id="validdate" class="form-text text-muted invalid-feedback">
+                    You must add a valid date
+                </small>
+            </div>
+            <div class="form-group col-md-10 ">
+                <label for="list">Class</label>
+                <select class="form-control w-25" id="list">
+                    <option>Select..</option>
+                    <option>AC First Class</option>
+                    <option>AC 2-Tier</option>
+                    <option>AC 3-Tier</option>
+                    <option>First Class</option>
+                    <option>AC Chair Car</option>
+                    <option>Sleeper</option>
+                    <option>Second Sitting</option>
+                </select>
+                <small id="validlist" class="form-text text-muted invalid-feedback">
+                    You must add a Class
+                </small>
+
+            </div>
+
+            <div class="form-group ">
+                <label for="from">From</label>
+                <input type="text" name="" id="from" class="form-control w-50">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    You must add a valid address
+                </small>
+            </div>
+            <div class="form-group ">
+                <label for="to">To</label>
+                <input type="text" name="" id="to" class="form-control w-50 ">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    You must add a valid address
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Enter your phone number</label>
+                <input class="form-control" name="phone" id="phone" rows="3">
+                <small id="emailphone" class="form-text text-muted invalid-feedback">
+                    Your phone number must be 10 digit long
+                </small>
+            </div>
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+    <section id="foot" class="section-footer">
+        <div class="container-footer">
+            <ul id="footer-ul" style="list-style:none;">
+                <h2>Connect With Me</h2>
+                <li><a href="https://www.linkedin.com/in/aadarsh-rathore/"><img style="width: 40px;height: 30px"
+                            src="image/img/linkedin-svgrepo-com.svg" alt="img-logo"></a><br></li>
+                <li><a href="https://github.com/aadarshrathore"><img style="width: 40px;height: 30px;"
+                            src="image/img/github-svgrepo-com (2).svg" alt="img-logo"></a><br></li>
+                <li><a href="https://twitter.com/_aadarsh_rathor"><img style="width: 40px;height: 30px"
+                            src="image/img/twitter-svgrepo-com.svg" alt="img-logo"></a><br></li>
+                <li><a href="https://www.instagram.com/_aadarsh.rathore/"><img style="width: 40px;height: 30px;"
+                            src="image/img/instagram-svgrepo-com.svg" alt="img-logo"></a><br></li>
+            </ul>
+            <p style="font-size: small;color:rgba(255, 255, 255, 0.502)">©2022 Built by Aadarsh Rathore</p>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
