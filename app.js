@@ -76,7 +76,7 @@ email.addEventListener('blur', () => {
     // console.log(regex,str)
     if (regex.test(str)) {
         // console.log('your email is valid')
-        email.classList.remove('is-inavalid');
+        email.classList.remove('is-invalid');
         validEmail = true;
     } else {
         // console.log('email is not valid')
